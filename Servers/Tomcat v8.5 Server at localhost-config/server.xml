@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8090" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8090" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Project03" path="/Project03" reloadable="true" source="org.eclipse.jst.jee.server:Project03"/><Context docBase="Project04" path="/Project04" reloadable="true" source="org.eclipse.jst.jee.server:Project04"/><Context docBase="Project05" path="/Project05" reloadable="true" source="org.eclipse.jst.jee.server:Project05"/><Context docBase="Project07" path="/Project07" reloadable="true" source="org.eclipse.jst.jee.server:Project07"/><Context docBase="Project08" path="/Project08" reloadable="true" source="org.eclipse.jst.jee.server:Project08"/><Context docBase="Project09" path="/Project09" reloadable="true" source="org.eclipse.jst.jee.server:Project09"/><Context docBase="Project10" path="/Project10" reloadable="true" source="org.eclipse.jst.jee.server:Project10"/><Context docBase="Project11" path="/Project11" reloadable="true" source="org.eclipse.jst.jee.server:Project11"/><Context docBase="Project12" path="/Project12" reloadable="true" source="org.eclipse.jst.jee.server:Project12"/></Host>
+      <Context docBase="Project03" path="/Project03" reloadable="true" source="org.eclipse.jst.jee.server:Project03"/><Context docBase="Project04" path="/Project04" reloadable="true" source="org.eclipse.jst.jee.server:Project04"/><Context docBase="Project05" path="/Project05" reloadable="true" source="org.eclipse.jst.jee.server:Project05"/><Context docBase="Project07" path="/Project07" reloadable="true" source="org.eclipse.jst.jee.server:Project07"/><Context docBase="Project08" path="/Project08" reloadable="true" source="org.eclipse.jst.jee.server:Project08"/><Context docBase="Project09" path="/Project09" reloadable="true" source="org.eclipse.jst.jee.server:Project09"/><Context docBase="Project10" path="/Project10" reloadable="true" source="org.eclipse.jst.jee.server:Project10"/><Context docBase="Project11" path="/Project11" reloadable="true" source="org.eclipse.jst.jee.server:Project11"/><Context docBase="Project12" path="/Project12" reloadable="true" source="org.eclipse.jst.jee.server:Project12"/><Context docBase="Project13" path="/Project13" reloadable="true" source="org.eclipse.jst.jee.server:Project13"/><Context docBase="Project14" path="/Project14" reloadable="true" source="org.eclipse.jst.jee.server:Project14"/><Context docBase="Project15" path="/Project15" reloadable="true" source="org.eclipse.jst.jee.server:Project15"/><Context docBase="Project18" path="/Project18" reloadable="true" source="org.eclipse.jst.jee.server:Project18"/></Host>
     </Engine>
   </Service>
 </Server>
